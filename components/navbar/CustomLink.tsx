@@ -13,8 +13,6 @@ const CustomLink = ({
   className: string;
 }) => {
   const pathname = usePathname();
-
-  console.log(pathname);
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
