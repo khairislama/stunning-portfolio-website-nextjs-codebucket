@@ -4,6 +4,8 @@ import { Inter as FontSans } from "next/font/google";
 import { Montserrat } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,11 +31,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-mont antialiased",
+          "min-h-screen bg-background font-mont antialiased w-full",
           montserrat.variable
         )}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
