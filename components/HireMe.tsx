@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CircularText } from "./Icons";
 
+export const runtime = "edge";
+
 function HireMe() {
   return (
     <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden">

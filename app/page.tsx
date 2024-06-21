@@ -5,6 +5,16 @@ import HireMe from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
 import ProfilePic from "../public/developer-pic-1.png";
 import LightBulb from "../public/miscellaneous_icons_1.svg";
+import { Metadata } from "next";
+
+export const runtime = "edge";
+
+export const metadata: Metadata = {
+  title: "Khairi SLAMA | Home Page",
+  description: "my description",
+  keywords:
+    "Khairi SLAMA, Khairi, Slama, Web developer, Tech engineer, software engineer",
+};
 
 export default function Home() {
   return (

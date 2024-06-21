@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const runtime = "edge";
+
 function Footer() {
   return (
     <footer className="w-full border-t-2 border-solid border-foreground font-medium text-lg">
