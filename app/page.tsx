@@ -1,9 +1,20 @@
 import Image from "next/image";
-import ProfilePic from "../public/developer-pic-1.png";
-import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/components/Icons";
+import AnimatedText from "@/components/AnimatedText";
 import HireMe from "@/components/HireMe";
+import { LinkArrow } from "@/components/Icons";
+import ProfilePic from "../public/developer-pic-1.png";
+import LightBulb from "../public/miscellaneous_icons_1.svg";
+import { Metadata } from "next";
+
+export const runtime = "edge";
+
+export const metadata: Metadata = {
+  title: "Khairi SLAMA | Home Page",
+  description: "my description",
+  keywords:
+    "Khairi SLAMA, Khairi, Slama, Web developer, Tech engineer, software engineer",
+};
 
 export default function Home() {
   return (
@@ -50,6 +61,9 @@ export default function Home() {
         </div>
       </div>
       <HireMe />
+      <div className="absolute right-8 bottom-8 inline-block w-24">
+        <Image src={LightBulb} alt="Khairi SLAMA" className="w-full h-auto" />
+      </div>
     </main>
   );
 }

@@ -9,6 +9,8 @@ import {
 } from "../Icons";
 import CustomIconLink from "./CustomIconLink";
 
+export const runtime = "edge";
+
 export default function Navbar() {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
